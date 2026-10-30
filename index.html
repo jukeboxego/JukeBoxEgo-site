@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050719">
+<meta name="description" content="Juke Box Ego: gaming videos, short clips, creative projects, and BOB. Press play, explore the projects, and join the community.">
+<meta name="author" content="Juke Box Ego">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://jukeboxego.github.io/JukeBoxEgo-site/">
+<meta property="og:title" content="Juke Box Ego — Press play.">
+<meta property="og:description" content="Gaming, clips, creator projects, and BOB. Find Juke Box Ego online.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jukeboxego.github.io/JukeBoxEgo-site/">
+<meta property="og:image" content="assets/juke-box-ego-logo.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Juke Box Ego — Press play.">
+<meta name="twitter:description" content="Gaming, clips, creator projects, and BOB. Find Juke Box Ego online.">
+<meta name="twitter:image" content="assets/juke-box-ego-logo.png">
+<title>Juke Box Ego — Press play.</title>
+<link rel="icon" type="image/png" href="assets/juke-box-ego-logo.png">
+<style>
+:root{color-scheme:dark;--bg:#050719;--panel:#0b1030;--panel2:#101944;--blue:#386bff;--cyan:#39e8ff;--white:#f4f7ff;--muted:#a9b4d8;--line:#29356b;--max:1160px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--white);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid var(--cyan);outline-offset:4px}.wrap{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
+header{position:sticky;top:0;z-index:10;background:#050719ed;border-bottom:1px solid #29356b99;backdrop-filter:blur(16px)}nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:950;letter-spacing:.035em;font-size:17px}.brand img{width:45px;height:45px;border-radius:50%;box-shadow:0 0 22px #285bff55}.brand .ego{color:var(--cyan)}
+.links{display:flex;align-items:center;gap:25px;color:var(--muted);font-size:14px;font-weight:700}.links a:hover{color:var(--cyan)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--line);border-radius:999px;padding:12px 19px;font-size:14px;font-weight:850;transition:transform .2s,border-color .2s,filter .2s}.btn:hover{transform:translateY(-2px);border-color:var(--cyan)}.primary{background:linear-gradient(105deg,#4b6bff,#218dff 58%,var(--cyan));border:0;color:#05091d;box-shadow:0 8px 30px #1b65ff33}.menu{display:none;background:transparent;color:var(--white);border:1px solid var(--line);border-radius:10px;padding:8px 12px;font:inherit}
+.hero{position:relative;overflow:hidden;padding:90px 0 100px;background:radial-gradient(ellipse at 77% 43%,#1747c855,transparent 36%),radial-gradient(ellipse at 10% 10%,#082d7555,transparent 40%)}
+.hero:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(#5a7cff1a 1px,transparent 1px),linear-gradient(90deg,#5a7cff1a 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,#000,transparent 90%)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:34px}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--cyan);font-size:11px;font-weight:900;letter-spacing:.22em;text-transform:uppercase}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}
+h1{font-size:clamp(56px,8vw,100px);line-height:.91;letter-spacing:-.075em;margin:23px 0 24px;font-weight:1000}.grad{background:linear-gradient(100deg,#fff 4%,#84b6ff 48%,var(--cyan));background-clip:text;-webkit-background-clip:text;color:transparent}
+.lead{max-width:570px;color:var(--muted);font-size:clamp(17px,2vw,20px);margin:0 0 28px}.actions{display:flex;gap:12px;flex-wrap:wrap}.tiny{color:#8291bd;font-size:12px;margin-top:24px;letter-spacing:.08em}
+.art{display:grid;place-items:center;position:relative;min-height:390px}.orbit{position:absolute;width:min(360px,78vw);aspect-ratio:1;border:1px solid #3e70ff55;border-radius:50%;box-shadow:0 0 90px #184bff22,inset 0 0 70px #184bff15}.orbit:before,.orbit:after{content:"";position:absolute;inset:24px;border:1px dashed #3e70ff66;border-radius:50%}.orbit:after{inset:56px;border-style:solid;border-color:#39e8ff33}.logo{position:relative;width:min(275px,62vw);border-radius:50%;box-shadow:0 0 85px #244dff66;animation:float 6s ease-in-out infinite}.sticker{position:absolute;right:2%;bottom:9%;padding:11px 15px;background:#0a1234;border:1px solid #3859a5;border-radius:14px;font-size:12px;font-weight:900;letter-spacing:.1em;transform:rotate(-5deg)}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+section{padding:82px 0}.head{max-width:690px;margin-bottom:30px}.kicker{color:var(--cyan);font-size:11px;font-weight:900;letter-spacing:.2em;text-transform:uppercase}h2{font-size:clamp(32px,5vw,48px);line-height:1.12;letter-spacing:-.05em;margin:10px 0 13px}.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.card{border:1px solid var(--line);border-radius:20px;padding:25px;background:linear-gradient(145deg,#10183cbb,#080d26);transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-4px);border-color:#3d8fff}.symbol{display:grid;place-items:center;width:48px;height:48px;border-radius:14px;background:#1b3e9b66;color:var(--cyan);font-size:22px;margin-bottom:19px}.card h3{font-size:20px;margin:0 0 7px}.card p{font-size:14px;color:var(--muted);margin:0 0 18px}.arrow{color:var(--cyan);font-weight:850;font-size:14px}
+.workshop{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:center;padding:clamp(25px,5vw,48px);border:1px solid var(--line);border-radius:25px;background:radial-gradient(ellipse at 5% 10%,#173c8a55,transparent 55%),var(--panel)}.work-art{min-height:255px;display:grid;place-items:center;border-radius:18px;border:1px solid #304a9a66;background:linear-gradient(145deg,#111d52,#070a20);position:relative;overflow:hidden}.work-art img{width:min(250px,82%);max-height:290px;object-fit:contain;border-radius:18px;filter:drop-shadow(0 0 35px #285dff88);position:relative;z-index:1}.work-art:after{z-index:2;text-shadow:0 2px 10px #000}
+.contact-grid{display:grid;grid-template-columns:1fr .85fr;gap:22px;align-items:stretch}.contact-panel{border:1px solid var(--line);border-radius:20px;padding:clamp(24px,4vw,38px);background:linear-gradient(145deg,#10183cbb,#080d26)}.contact-email{display:inline-flex;align-items:center;gap:10px;margin:12px 0 22px;padding:13px 16px;border:1px solid #36539d;border-radius:12px;color:var(--cyan);font-weight:850;overflow-wrap:anywhere}.contact-note{font-size:13px;color:var(--muted)}.contact-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.skip-link{position:absolute;left:-9999px;top:8px;background:var(--cyan);color:#050719;padding:10px 14px;border-radius:8px;z-index:99;font-weight:900}.skip-link:focus{left:10px}.work-art:after{content:"BOB / WORKSHOP";position:absolute;bottom:16px;font-size:10px;font-weight:900;letter-spacing:.22em;color:var(--cyan)}
+.content-card{padding:0;overflow:hidden;display:flex;flex-direction:column;min-height:0}.video-wrap{width:100%;aspect-ratio:16/9;min-height:0;position:relative;display:grid;place-items:center;overflow:hidden;background:#070b24}.video-frame{position:absolute;inset:0;display:block;width:100%;height:100%;border:0;background:#070b24}.video-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s ease,filter .25s ease}.video-wrap:hover .video-poster{transform:scale(1.035);filter:brightness(.72)}.video-play{position:absolute;z-index:2;display:grid;place-items:center;width:54px;height:54px;border:1px solid #a9f5ff99;border-radius:50%;background:#39e8ff;color:#050719;font-size:21px;box-shadow:0 0 32px #39e8ff55;pointer-events:none}.video-hint{position:absolute;z-index:2;left:10px;bottom:9px;padding:5px 8px;border-radius:6px;background:#050719d9;color:#dce8ff;font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;pointer-events:none}.video-wrap.is-playing .video-poster,.video-wrap.is-playing .video-play,.video-wrap.is-playing .video-hint{display:none}.video-wrap:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}.youtube-static{display:block;text-decoration:none;cursor:pointer}.youtube-static:hover .video-play{transform:scale(1.08)}.youtube-static .video-play{transition:transform .2s ease}.bob-thumb{width:100%;height:auto;aspect-ratio:16/9;min-height:0;max-height:none;object-fit:cover;display:block}.bob-thumb{width:100%;height:100%;min-height:190px;max-height:230px;object-fit:cover;display:block}.field{display:block;width:100%;margin:8px 0 14px;padding:13px 14px;border:1px solid #304a8a;border-radius:10px;background:#070b20;color:var(--white);font:inherit}.field:focus{outline:2px solid var(--cyan);outline-offset:2px}.contact-form label{font-size:13px;font-weight:800;color:var(--muted)}.contact-form textarea{min-height:135px;resize:vertical}.content-thumb{min-height:0}.content-thumb{min-height:155px;display:grid;place-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 20%,#234bba,#0b1030 68%)}.content-thumb:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 35%,#39e8ff18 35%,#39e8ff18 36%,transparent 36%,transparent 62%,#386bff22 62%,#386bff22 63%,transparent 63%)}.play-mark{position:relative;display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:#39e8ff;color:#050719;font-size:22px;box-shadow:0 0 35px #39e8ff55}.content-card{transition:transform .25s ease,box-shadow .25s ease}.content-card:hover{box-shadow:0 18px 55px #0005}.content-body{padding:15px;display:flex;flex-direction:column;align-items:flex-start;flex:1}.content-body .kicker{font-size:9px}.content-body h3{font-size:17px;margin:7px 0 5px}.content-body p{font-size:12px;line-height:1.5;margin:0 0 12px;flex:1}.content-body .arrow{font-size:12px}.update-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.update-item{border-left:2px solid var(--cyan);padding:5px 0 5px 18px}.update-item h3{font-size:17px;margin:5px 0}.update-item p{font-size:14px;color:var(--muted);margin:0}.social-strip{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.social-strip a{padding:10px 14px;border:1px solid var(--line);border-radius:999px;font-size:13px;font-weight:800;color:var(--muted)}.social-strip a:hover{border-color:var(--cyan);color:var(--cyan)}
+.cta{text-align:center;padding:65px 25px;border:1px solid var(--line);border-radius:24px;background:radial-gradient(ellipse at 50% 0%,#174caa55,transparent 65%),#090e29}.cta p{max-width:570px;margin:0 auto 23px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:25px 0;color:#8e9bc2;font-size:13px}.foot{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}.foot-brand{display:flex;align-items:center;gap:9px}.foot-brand img{width:28px;height:28px;border-radius:50%}
+@media(max-width:800px){#content .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.update-list{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}.hero{padding:65px 0 75px}.hero-grid{grid-template-columns:1fr;text-align:center}.hero-copy{grid-row:2}.art{grid-row:1;min-height:285px}.logo{width:200px}.orbit{width:275px}.lead{margin-inline:auto}.actions{justify-content:center}.tiny{margin-top:19px}.grid{grid-template-columns:1fr}.workshop{grid-template-columns:1fr}.work-art{min-height:220px}}
+@media(max-width:620px){#content .grid{grid-template-columns:1fr}.wrap{width:calc(100% - 30px)}nav{min-height:68px}.brand{font-size:14px;gap:8px}.brand img{width:38px;height:38px}.menu{display:block}.links{display:none;position:absolute;top:68px;left:0;right:0;background:#070b24;border-bottom:1px solid var(--line);padding:14px 22px 20px;flex-direction:column;align-items:stretch;gap:0}.links.open{display:flex}.links a{padding:11px 3px}.links .btn{margin-top:8px}.hero{padding:45px 0 58px}h1{font-size:clamp(51px,15vw,75px)}section{padding:60px 0}.art{min-height:245px}.logo{width:170px}.orbit{width:230px}.sticker{right:0;bottom:4%}.foot{justify-content:center;text-align:center}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* Floating social dock */
+.social-dock{position:fixed;z-index:50;left:50%;bottom:max(16px,env(safe-area-inset-bottom));transform:translateX(-50%);display:flex;align-items:center;gap:9px;padding:9px;background:rgba(5,9,27,.72);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border:1px solid #ffffff24;border-radius:23px;box-shadow:0 18px 55px #0008, inset 0 1px #ffffff12}
+.social-dock a{width:52px;height:52px;display:grid;place-items:center;clip-path:url(#dockSquircle);border:1px solid #ffffff20;border-radius:15px;color:white;transition:transform .25s ease,filter .25s ease,box-shadow .25s ease;box-shadow:0 5px 15px #0005}
+.social-dock a:hover,.social-dock a:focus-visible{transform:translateY(-8px) scale(1.09);filter:brightness(1.17);box-shadow:0 12px 28px #0008}
+.social-dock svg.icon{width:27px;height:27px;display:block;fill:currentColor}
+.social-dock .yt{background:linear-gradient(145deg,#f04444,#a90920)}.social-dock .tt{background:linear-gradient(145deg,#222,#050505);color:#fff;box-shadow:inset 2px 0 #25f4ee,inset -2px 0 #fe2c55}
+.social-dock .discord{background:linear-gradient(145deg,#5865f2,#343da8)}.social-dock .linktree{background:linear-gradient(145deg,#36d6a1,#087e76)}
+.social-dock .steam{background:linear-gradient(145deg,#475569,#101827)}
+.social-dock a:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+body{padding-bottom:95px}
+@media(max-width:480px){.social-dock{gap:7px;padding:7px;border-radius:20px}.social-dock a{width:45px;height:45px;border-radius:13px}.social-dock svg.icon{width:24px;height:24px}body{padding-bottom:85px}}
+@media(prefers-reduced-motion:reduce){.social-dock a{transition:none}}
+
+
+/* Upgrade additions */
+.hero-feature{margin-top:30px;max-width:590px;border:1px solid #3b5ca8;border-radius:18px;overflow:hidden;background:#080e2a;box-shadow:0 18px 55px #0006}
+.hero-feature .video-wrap{aspect-ratio:16/9}
+.hero-feature-copy{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 15px}
+.hero-feature-copy strong{font-size:13px}
+.hero-feature-copy span{font-size:11px;color:var(--muted)}
+.creator-note{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+.creator-note .card{padding:22px}
+.project-details{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:22px 0}
+.project-detail{padding:15px;border:1px solid #304a8a;border-radius:14px;background:#080e2a}
+.project-detail strong{display:block;color:var(--cyan);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px}
+.project-detail span{font-size:13px;color:var(--muted)}
+.section-cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.head:has(.social-card-grid){max-width:none}.social-card-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;margin-top:22px;width:100%}
+.social-card{display:flex;flex-direction:column;justify-content:center;gap:12px;min-height:150px;padding:24px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#10183cbb,#080d26);transition:transform .2s,border-color .2s}
+.social-card:hover{transform:translateY(-3px);border-color:var(--cyan)}
+.social-card strong{font-size:clamp(15px,1.4vw,18px)}.social-card span{font-size:14px;line-height:1.6;color:var(--muted)}
+@media(max-width:800px){.social-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.project-details{grid-template-columns:1fr}.creator-note{grid-template-columns:1fr}}
+@media(max-width:480px){.hero-feature-copy{align-items:flex-start;flex-direction:column}.social-card-grid{grid-template-columns:1fr 1fr}}
+
+
+/* Screenshot-inspired contact redesign */
+.contact-section{background:#08090b;padding:88px 0 96px;color:#f4f4f6}
+.contact-heading{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;margin-bottom:38px}
+.contact-kicker{color:#f3263d;font-size:11px;font-weight:900;letter-spacing:.24em;text-transform:uppercase}
+.contact-heading h2{font-size:clamp(38px,5vw,54px);letter-spacing:-.055em;line-height:1.08;margin:14px 0 0;color:#f4f4f6}
+.contact-heading>p{color:#a5a6ad;max-width:560px;line-height:1.8;margin:0;font-size:14px}
+.contact-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:50px;align-items:start}
+.contact-intro h3{font-size:18px;margin:21px 0 22px;color:#e7e7eb}
+.contact-topic{display:flex;flex-direction:column;gap:6px;padding:0 0 18px;margin:0 0 18px;border-bottom:1px solid #292a2e}
+.contact-topic strong{font-size:14px;color:#dedfe4}
+.contact-topic span{font-size:14px;color:#a6a7ae}
+.contact-footnote{font-size:11px;line-height:1.8;color:#85868e;padding:10px 0;border-bottom:1px solid #292a2e}
+.contact-form-modern{display:flex;flex-direction:column;gap:0}
+.contact-fields{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.contact-form-modern .field{margin:0 0 13px;min-height:62px;padding:17px 15px;border:1px solid #2d2e33;border-radius:0;background:#111216;color:#f4f4f6;font-size:14px}
+.contact-form-modern .field::placeholder{color:#85868e}
+.contact-form-modern .field:focus{outline:1px solid #f3263d;border-color:#f3263d}
+.contact-form-modern .contact-select{appearance:auto;color:#f4f4f6;border-color:#f3263d;cursor:pointer}
+.contact-form-modern textarea.field{min-height:132px;resize:vertical}
+.contact-send{align-self:flex-start;border:0;border-radius:0;background:#f3263d;color:white;font-size:12px;letter-spacing:.08em;font-weight:950;padding:20px 22px;min-width:160px}
+.contact-send:hover{background:#d91e33;transform:translateY(-2px);border:0}
+.contact-section .contact-note{color:#85868e;font-size:11px;margin-top:14px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.hero-youtube-link{font-size:11px;color:var(--cyan);font-weight:800}
+.hero-feature-copy{flex-wrap:wrap}
+.local-hover-video{cursor:pointer}
+.local-hover-video .local-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#080b18}
+.local-hover-video.is-playing .video-play,.local-hover-video.is-playing .video-hint{display:none}
+@media(max-width:800px){.contact-heading{grid-template-columns:1fr;gap:16px}.contact-layout{grid-template-columns:1fr;gap:25px}.contact-intro h3{margin-top:0}}
+@media(max-width:520px){.contact-fields{grid-template-columns:1fr;gap:0}.contact-heading h2{font-size:39px}.contact-section{padding:64px 0}.hero-feature-copy{gap:7px}}
+
+
+/* Unified Juke Box Ego blue theme for contact, call-to-action, and footer */
+.contact-section{background:linear-gradient(180deg,#070c22 0%,#050719 100%);color:var(--white);border-top:1px solid #24376e}
+.contact-kicker{color:var(--cyan)}
+.contact-heading h2{color:var(--white)}
+.contact-heading>p,.contact-topic span,.contact-footnote,.contact-section .contact-note{color:var(--muted)}
+.contact-intro h3,.contact-topic strong{color:#eaf1ff}
+.contact-topic{border-bottom-color:var(--line)}
+.contact-footnote{border-bottom-color:var(--line)}
+.contact-form-modern .field{background:#0b1230;color:var(--white);border-color:#293b75;border-radius:10px}
+.contact-form-modern .field::placeholder{color:#8492bb}
+.contact-form-modern .field:focus{outline:1px solid var(--cyan);border-color:var(--cyan)}
+.contact-form-modern .contact-select{border-color:#386bff;background-color:#0b1230;color:var(--white)}
+.contact-send{background:linear-gradient(105deg,#4b6bff,#218dff 58%,var(--cyan));color:#05091d;border-radius:999px;box-shadow:0 8px 30px #1b65ff33}
+.contact-send:hover{background:linear-gradient(105deg,#5c7aff,#38a0ff 58%,#62efff);border:0}
+.history-cta{padding:30px 0 62px;background:var(--bg)}
+.history-panel{position:relative;isolation:isolate;overflow:hidden;min-height:258px;display:flex;align-items:center;justify-content:space-between;gap:35px;padding:42px 58px;border:1px solid #34539a;border-radius:4px;background-image:linear-gradient(90deg,rgba(4,10,31,.96) 0%,rgba(5,17,49,.83) 47%,rgba(3,14,43,.68) 100%),url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962700/header.jpg?t=1785967256");background-size:cover;background-position:center 48%;box-shadow:0 18px 60px #00164d55}
+.history-panel:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(115deg,#071b48aa,#0a58a055 55%,#06122f99);mix-blend-mode:color}
+.history-copy{max-width:690px}
+.history-copy .kicker{color:var(--cyan);font-size:11px;font-weight:950;letter-spacing:.22em}
+.history-copy h2{font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-.055em;margin:12px 0 10px;color:#f4f7ff}
+.history-copy p{max-width:570px;margin:0;color:#c2d1f1;font-size:15px;line-height:1.7}
+.history-button{flex:0 0 auto;white-space:nowrap;padding:16px 24px}
+.site-footer{border-top:1px solid #23366c;background:#050719;padding:18px 0;color:#a9b4d8;font-size:12px}
+.footer-inner{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;gap:20px}
+.footer-brand{display:inline-flex;align-items:center;gap:10px;min-width:0;width:max-content}
+.footer-brand img{width:34px;height:34px;object-fit:contain;border-radius:7px;box-shadow:0 0 20px #285bff33}
+.footer-brand-copy{display:flex;flex-direction:column;line-height:1.25}
+.footer-brand-copy strong{font-size:14px;color:#eaf1ff;letter-spacing:.015em}
+.footer-brand-copy small{font-size:8px;color:#9eadd1;font-weight:850;letter-spacing:.18em}
+.footer-copyright{text-align:center;margin:0;color:#a9b4d8;font-size:11px;white-space:nowrap}
+.footer-links{display:flex;justify-content:flex-end;align-items:center;gap:22px}
+.footer-links a{color:#a9b4d8;font-size:11px;white-space:nowrap}
+.footer-links a:hover{color:var(--cyan)}
+@media(max-width:800px){
+ .history-panel{padding:34px 28px;align-items:flex-start;flex-direction:column;justify-content:center;gap:22px}
+ .footer-inner{grid-template-columns:1fr 1fr;row-gap:14px}
+ .footer-copyright{grid-column:1/-1;grid-row:2;text-align:left}
+ .footer-links{justify-content:flex-end;grid-column:2;grid-row:1}
+}
+@media(max-width:520px){
+ .history-cta{padding:12px 0 42px}
+ .history-panel{min-height:290px;padding:28px 22px;background-position:56% center}
+ .history-copy h2{font-size:34px}
+ .footer-inner{display:flex;flex-direction:column;align-items:center;gap:13px}
+ .footer-copyright{order:2;text-align:center;white-space:normal}
+ .footer-links{order:3;justify-content:center;gap:20px}
+}
+
+/* DARKER + MORE VISIBLE ORIGINAL ANIMATION */
+html{background:#02040d!important}body:before{background:radial-gradient(ellipse at 18% 28%,#08234b88 0,transparent 34%),radial-gradient(ellipse at 78% 22%,#092b4b80 0,transparent 32%),radial-gradient(ellipse at 58% 82%,#101b5488 0,transparent 38%),linear-gradient(135deg,#01030a 0%,#030918 48%,#02040d 100%)!important;background-size:190% 190%!important;animation:jbeAurora 13s ease-in-out infinite alternate!important;filter:brightness(.72) saturate(1.18)}body:after{opacity:.19!important;background-size:97px 97px,157px 157px!important;animation:jbeDrift 24s linear infinite!important}@keyframes jbeAurora{0%{background-position:0% 35%,100% 0%,40% 100%,0 0;transform:scale(1);filter:brightness(.68) hue-rotate(-8deg)}50%{filter:brightness(.82) hue-rotate(5deg)}100%{background-position:100% 65%,0% 100%,70% 0%,0 0;transform:scale(1.08);filter:brightness(.72) hue-rotate(18deg)}}@keyframes jbeDrift{to{background-position:97px 97px,199px 214px}}
+
+
+/* Uiverse ElSombrero2-inspired 3D flip cards; scoped to the social platform section. */
+#socials .platform-flip-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;perspective:1200px}
+#socials .platform-flip-card{display:block;position:relative;min-width:0;aspect-ratio:190/254;text-decoration:none;outline-offset:5px;perspective:1000px}
+#socials .platform-flip-content{display:block;width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform 550ms cubic-bezier(.2,.7,.2,1);box-shadow:0 12px 32px #0009;border-radius:12px}
+#socials .platform-flip-card:hover .platform-flip-content,#socials .platform-flip-card:focus-visible .platform-flip-content{transform:rotateY(180deg)}
+#socials .platform-back,#socials .platform-front{display:flex;position:absolute;inset:0;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:12px;background:#10172f;align-items:center;justify-content:center}
+#socials .platform-back::before{position:absolute;content:"";width:70%;height:160%;background:linear-gradient(90deg,transparent,#326bff,#39e8ff,#326bff,transparent);animation:platform-border-spin 5s linear infinite}
+#socials .platform-back-content{position:absolute;inset:3px;border-radius:10px;background:linear-gradient(150deg,#101b40,#060c21);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px;text-align:center;padding:15px;color:#fff}
+#socials .platform-index{font-size:8px;letter-spacing:.15em;color:#39e8ff;font-weight:900}
+#socials .platform-title{font-size:clamp(16px,1.7vw,23px);font-weight:900;line-height:1.15;color:#fff}
+#socials .platform-description{font-size:12px;line-height:1.45;color:#acbce0}
+#socials .platform-prompt{font-size:9px;letter-spacing:.09em;font-weight:800;color:#39e8ff;margin-top:9px}
+#socials .platform-front{transform:rotateY(180deg);background:radial-gradient(circle at 50% 35%,#173b82,#071027 72%);border:1px solid #39e8ff55;flex-direction:column;gap:12px}
+#socials .platform-front img{width:min(66%,140px);height:auto;aspect-ratio:1;object-fit:contain;position:relative;z-index:2;filter:drop-shadow(0 12px 20px #0009)}
+#socials .platform-open{z-index:2;color:#d9f9ff;font-size:10px;letter-spacing:.06em;font-weight:900}
+#socials .platform-orb{position:absolute;width:100px;height:100px;border-radius:50%;filter:blur(26px);background:#326bff77;animation:platform-float 2.6s ease-in-out infinite alternate}
+#socials .orb-top{top:5%;left:5%}#socials .orb-bottom{bottom:4%;right:0;background:#39e8ff55;animation-delay:-1s}
+@keyframes platform-border-spin{to{transform:rotate(360deg)}}
+@keyframes platform-float{to{transform:translateY(14px)}}
+@media(max-width:900px){#socials .platform-flip-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:560px){#socials .platform-flip-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}#socials .platform-title{font-size:17px}}
+@media(prefers-reduced-motion:reduce){#socials .platform-flip-content{transition:none}#socials .platform-back::before,#socials .platform-orb{animation:none}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Juke Box Ego","url":"https://jukeboxego.github.io/JukeBoxEgo-site/","sameAs":["https://www.youtube.com/@Juke_Box_Ego","https://www.tiktok.com/@juke.box.ego","https://linktr.ee/jukeboxego"]}
+</script>
+<style id="jbe-moving-background">
+/* JBE ORIGINAL MOTION BACKGROUND — ambient orbital soundscape */
+html{background:#050719}body{background:transparent!important;isolation:isolate}body:before{content:"";position:fixed;inset:-18%;z-index:-2;pointer-events:none;background:radial-gradient(ellipse at 18% 28%,#123c83aa 0,transparent 32%),radial-gradient(ellipse at 78% 22%,#123e69aa 0,transparent 30%),radial-gradient(ellipse at 58% 82%,#162a78aa 0,transparent 36%),linear-gradient(135deg,#030615,#07132b 48%,#050719);background-size:150% 150%;animation:jbeAurora 24s ease-in-out infinite alternate}body:after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.28;background-image:radial-gradient(circle,#5eeeff 1px,transparent 1.7px),radial-gradient(circle,#668cff 1px,transparent 1.8px);background-size:83px 83px,137px 137px;background-position:0 0,42px 61px;mask-image:linear-gradient(180deg,transparent,#000 16%,#000 80%,transparent);animation:jbeDrift 55s linear infinite} @keyframes jbeAurora{0%{background-position:0% 40%,100% 0%,40% 100%,0 0;filter:hue-rotate(0deg)}100%{background-position:100% 60%,0% 100%,70% 0%,0 0;filter:hue-rotate(18deg)}}@keyframes jbeDrift{to{background-position:83px 83px,179px 198px}}
+@media(prefers-reduced-motion:reduce){body:before,body:after{animation:none!important}}
+</style>
+<style>
+/* 3D coin ONLY in navigation; hero keeps its original static image. */
+.brand .nav-coin{display:block;width:44px;height:44px;flex:0 0 44px;background:transparent;--poster-color:transparent;pointer-events:none;filter:drop-shadow(0 0 7px #336dff88)}
+.brand{display:flex;align-items:center;gap:8px}
+@media(max-width:560px){.brand .nav-coin{width:36px;height:36px;flex-basis:36px}}
+</style>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">Skip to content</a>
+<header><nav class="wrap" aria-label="Main navigation">
+<a class="brand" href="index.html"><model-viewer class="nav-coin" src="assets/juke-box-ego-spinning-coin.glb" alt="Spinning 3D Juke Box Ego coin" auto-rotate auto-rotate-delay="0" rotation-per-second="55deg" camera-orbit="0deg 90deg 120%" field-of-view="30deg" interaction-prompt="none" environment-image="neutral" exposure="1.3" loading="eager"></model-viewer><span>JUKE BOX <span class="ego">EGO</span></span></a>
+<button class="menu" aria-expanded="false" aria-controls="navlinks">Menu ☰</button>
+<div class="links" id="navlinks"><a href="#about">About</a><a href="#content">Content</a><a href="#projects">BOB & Projects</a><a href="#socials">Community</a><a href="#contact">Contact</a><a class="btn primary" href="https://www.youtube.com/@Juke_Box_Ego" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></div>
+</nav></header>
+<main id="main">
+<section class="hero"><div class="wrap hero-grid">
+<div class="hero-copy"><div class="eyebrow"><span class="dot"></span> Gaming · Clips · Creator life</div>
+<h1>PRESS PLAY.<br><span class="grad">BE YOURSELF.</span></h1>
+<p class="lead">Welcome to Juke Box Ego — your spot for gaming, good moments, projects, and whatever comes next. Check out the content, explore the builds, and follow the journey.</p>
+<div class="actions"><a class="btn primary" href="https://www.youtube.com/@Juke_Box_Ego" target="_blank" rel="noopener noreferrer">▶ Watch the channel</a><a class="btn" href="#projects">Explore the projects ↓</a></div>
+<p class="tiny">NO SCRIPT. JUST GAMES, PROJECTS & GOOD CHAOS.</p>
+<div class="hero-feature">
+<div class="video-wrap local-hover-video" data-video="Youtube%20Highlight%20Clip/Youtube%20Highlight%20Clip.mp4" aria-label="Hover to play the YouTube highlight clip">
+<video class="local-video" muted loop playsinline preload="none" poster="assets/youtube-highlight-poster.jpg">
+<source src="Youtube%20Highlight%20Clip/Youtube%20Highlight%20Clip.mp4" type="video/mp4">
+</video>
+<span class="video-play" aria-hidden="true">▶</span><span class="video-hint">Hover to play · Featured clip</span>
+</div>
+<div class="hero-feature-copy"><strong>START HERE · FEATURED CLIP</strong><a class="hero-youtube-link" href="https://www.youtube.com/shorts/SlZkbR6LB_Y" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></div>
+</div></div>
+<div class="art"><div class="orbit"></div><img class="logo" src="assets/juke-box-ego-logo.png" alt="Juke Box Ego blue geometric logo"><div class="sticker">PLAYER ONE: YOU</div></div>
+</div></section>
+<section id="about"><div class="wrap"><div class="head"><div class="kicker">Welcome to my corner of the internet</div><h2>Gaming is better<br><span class="grad">when you share it.</span></h2><p class="muted">I’m building Juke Box Ego as a home for gaming videos, funny moments, creative experiments, and original projects. Whether you’re here for a quick clip or to follow a project from idea to release, you’re in the right place.</p></div>
+<div class="grid">
+<article class="card"><div class="symbol" aria-hidden="true">▶</div><h3>Watch the videos</h3><p>Head to YouTube for gaming content, channel uploads, and new things as they land.</p><a class="arrow" href="https://www.youtube.com/@Juke_Box_Ego" target="_blank" rel="noopener noreferrer">Open YouTube ↗</a></article>
+<article class="card"><div class="symbol" aria-hidden="true">⌘</div><h3>Check the projects</h3><p>Explore the BOB project and see what it is all about.</p><a class="arrow" href="https://jukeboxego.github.io/Bob-site/index.html#about" target="_blank" rel="noopener noreferrer">Explore Bob ↗</a></article>
+<article class="card"><div class="symbol" aria-hidden="true">◎</div><h3>Stay connected</h3><p>Find the social links in one place and follow along wherever you hang out.</p><a class="arrow" href="https://linktr.ee/jukeboxego" target="_blank" rel="noopener noreferrer">Open Linktree ↗</a></article>
+</div><div class="creator-note">
+<article class="card"><div class="kicker">The creator</div><h3>Games, ideas & good chaos.</h3><p>I share the moments worth watching and the projects worth building. This site is the central hub for everything happening under the Juke Box Ego name.</p></article>
+<article class="card"><div class="kicker">What to expect</div><h3>More than just uploads.</h3><p>Expect gaming content, short-form clips, experiments, community links, and progress on projects like BOB. Check back as new work gets added.</p></article>
+</div></div></section>
+<section id="projects"><div class="wrap"><div class="workshop"><div class="work-art"><img src="assets/bob.png" alt="BOB artwork: red BOB lettering in a dark, eerie scene" loading="lazy"></div><div><div class="kicker">Featured project</div><h2>Meet <span class="grad">BOB.</span></h2><p class="muted">BOB is a horror-based cartoon parody with an eerie, darkly playful twist. This is the home base for learning about the concept, seeing the artwork, and following the project as it develops.</p><div class="project-details"><div class="project-detail"><strong>Genre & tone</strong><span>Horror-inspired cartoon parody</span></div><div class="project-detail"><strong>Project focus</strong><span>Characters, atmosphere, and creative world-building</span></div><div class="project-detail"><strong>Follow along</strong><span>Visit the dedicated BOB project page for the latest details</span></div></div><div class="section-cta"><a class="btn primary" href="https://jukeboxego.github.io/Bob-site/index.html#about" target="_blank" rel="noopener noreferrer">Explore Bob ↗</a></div></div></div></section>
+<section id="content"><div class="wrap"><div class="head"><div class="kicker">Watch, scroll, repeat</div><h2>Your best clips, <span class="grad">on repeat.</span></h2><p class="muted">A hand-picked starting point from the Juke Box Ego channels. Open any clip on its original platform, then follow the channel for new uploads.</p></div><div class="grid">
+<article class="card content-card">
+<div class="video-wrap local-hover-video" aria-label="Hover to play the YouTube highlight clip">
+<video class="local-video" muted loop playsinline preload="none" poster="assets/youtube-highlight-poster.jpg">
+<source src="Youtube%20Highlight%20Clip/Youtube%20Highlight%20Clip.mp4" type="video/mp4">
+</video>
+<span class="video-play" aria-hidden="true">▶</span><span class="video-hint">Hover to play</span>
+</div>
+<div class="content-body"><div class="kicker">Featured YouTube Short</div><h3>Featured YouTube Short</h3><p>Preview the supplied YouTube highlight clip here, or open the original Short on YouTube.</p><a class="arrow" href="https://www.youtube.com/shorts/SlZkbR6LB_Y" target="_blank" rel="noopener noreferrer">Watch on YouTube ↗</a></div>
+</article>
+<article class="card content-card">
+<div class="video-wrap local-hover-video" aria-label="Hover to play the TikTok highlight clip">
+<video class="local-video" muted loop playsinline preload="none" poster="assets/tiktok-highlight-poster.jpg">
+<source src="Tiktok%20Highlight%20Clip/Tiktok%20Highlight%20Clip.mp4" type="video/mp4">
+</video>
+<span class="video-play" aria-hidden="true">▶</span><span class="video-hint">Hover to play</span>
+</div>
+<div class="content-body"><div class="kicker">Featured TikTok</div><h3>Featured TikTok clip</h3><p>Preview the supplied TikTok highlight clip here, or open the original post on TikTok.</p><a class="arrow" href="https://www.tiktok.com/@juke.box.ego/video/7608216273482222879" target="_blank" rel="noopener noreferrer">Watch on TikTok ↗</a></div>
+</article>
+<article class="card content-card"><a href="https://jukeboxego.github.io/Bob-site/index.html#about" target="_blank" rel="noopener noreferrer" aria-label="Explore the BOB project"><img class="bob-thumb" src="assets/bob.png" alt="BOB project artwork" loading="lazy"></a><div class="content-body"><div class="kicker">Builds & projects</div><h3>Explore the BOB project</h3><p>Discover the horror-inspired cartoon parody, its artwork, and project information.</p><a class="arrow" href="https://jukeboxego.github.io/Bob-site/index.html#about" target="_blank" rel="noopener noreferrer">Explore Bob ↗</a></div></article>
+</div><div class="section-cta"><a class="btn primary" href="https://www.youtube.com/@Juke_Box_Ego" target="_blank" rel="noopener noreferrer">See all YouTube videos ↗</a><a class="btn" href="https://www.tiktok.com/@juke.box.ego" target="_blank" rel="noopener noreferrer">More on TikTok ↗</a><a class="btn" href="https://jukeboxego.github.io/Bob-site/index.html#about" target="_blank" rel="noopener noreferrer">Explore BOB ↗</a></div></div></section>
+<section id="updates"><div class="wrap"><div class="head"><div class="kicker">The roadmap</div><h2>What’s in the <span class="grad">mix.</span></h2><p class="muted">Here’s what’s happening across the Juke Box Ego universe. Follow the platforms for new releases and check back as projects grow.</p></div><div class="update-list"><article class="update-item"><div class="kicker">01 / Watch</div><h3>New videos & clips</h3><p>Follow the YouTube and TikTok channels for new videos, highlights, and short-form posts.</p></article><article class="update-item"><div class="kicker">02 / Build</div><h3>Projects & experiments</h3><p>BOB is the featured project. More experiments and creative builds can join the lineup as they take shape.</p></article><article class="update-item"><div class="kicker">03 / Connect</div><h3>Ideas & collaborations</h3><p>Have an idea, question, or collaboration in mind? Use the contact section to prepare a message to Juke Box Ego.</p></article></div></div></section>
+<section id="socials"><div class="wrap"><div class="head"><div class="kicker">Find me online</div><h2>Pick your platform.</h2><p class="muted">The quickest ways to keep up with Juke Box Ego.</p><div class="social-card-grid platform-flip-grid">
+<a class="platform-flip-card platform-yt" href="https://www.youtube.com/@Juke_Box_Ego" target="_blank" rel="noopener noreferrer" aria-label="Open YouTube in a new tab"><span class="platform-flip-content"><span class="platform-back"><span class="platform-back-content"><span class="platform-index">JUKE BOX EGO / CONNECT</span><span class="platform-title">YouTube</span><span class="platform-description">Videos, highlights, and Shorts</span><span class="platform-prompt">HOVER TO REVEAL ↻</span></span></span><span class="platform-front"><span class="platform-orb orb-top"></span><span class="platform-orb orb-bottom"></span><img src="assets/platform-yt.svg" alt="YouTube logo" loading="lazy"><span class="platform-open">VISIT YOUTUBE ↗</span></span></span></a>
+<a class="platform-flip-card platform-tt" href="https://www.tiktok.com/@juke.box.ego" target="_blank" rel="noopener noreferrer" aria-label="Open TikTok in a new tab"><span class="platform-flip-content"><span class="platform-back"><span class="platform-back-content"><span class="platform-index">JUKE BOX EGO / CONNECT</span><span class="platform-title">TikTok</span><span class="platform-description">Quick clips and moments</span><span class="platform-prompt">HOVER TO REVEAL ↻</span></span></span><span class="platform-front"><span class="platform-orb orb-top"></span><span class="platform-orb orb-bottom"></span><img src="assets/platform-tt.svg" alt="TikTok logo" loading="lazy"><span class="platform-open">VISIT TIKTOK ↗</span></span></span></a>
+<a class="platform-flip-card platform-discord" href="https://discord.gg/K86YrTEtzB" target="_blank" rel="noopener noreferrer" aria-label="Open Discord in a new tab"><span class="platform-flip-content"><span class="platform-back"><span class="platform-back-content"><span class="platform-index">JUKE BOX EGO / CONNECT</span><span class="platform-title">Discord</span><span class="platform-description">Join the community</span><span class="platform-prompt">HOVER TO REVEAL ↻</span></span></span><span class="platform-front"><span class="platform-orb orb-top"></span><span class="platform-orb orb-bottom"></span><img src="assets/platform-discord.svg" alt="Discord logo" loading="lazy"><span class="platform-open">VISIT DISCORD ↗</span></span></span></a>
+<a class="platform-flip-card platform-linktree" href="https://linktr.ee/jukeboxego" target="_blank" rel="noopener noreferrer" aria-label="Open Linktree in a new tab"><span class="platform-flip-content"><span class="platform-back"><span class="platform-back-content"><span class="platform-index">JUKE BOX EGO / CONNECT</span><span class="platform-title">Linktree</span><span class="platform-description">All the important links</span><span class="platform-prompt">HOVER TO REVEAL ↻</span></span></span><span class="platform-front"><span class="platform-orb orb-top"></span><span class="platform-orb orb-bottom"></span><img src="assets/platform-linktree.svg" alt="Linktree logo" loading="lazy"><span class="platform-open">VISIT LINKTREE ↗</span></span></span></a>
+<a class="platform-flip-card platform-steam" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3765823192" target="_blank" rel="noopener noreferrer" aria-label="Open Steam Workshop in a new tab"><span class="platform-flip-content"><span class="platform-back"><span class="platform-back-content"><span class="platform-index">JUKE BOX EGO / CONNECT</span><span class="platform-title">Steam Workshop</span><span class="platform-description">Community creations and uploads</span><span class="platform-prompt">HOVER TO REVEAL ↻</span></span></span><span class="platform-front"><span class="platform-orb orb-top"></span><span class="platform-orb orb-bottom"></span><img src="assets/platform-steam.svg" alt="Steam Workshop logo" loading="lazy"><span class="platform-open">VISIT STEAM WORKSHOP ↗</span></span></span></a>
+</div></div></div></section>
+<section class="history-cta" aria-label="Connect with Juke Box Ego">
+<div class="wrap">
+  <div class="history-panel">
+    <div class="history-copy">
+      <div class="kicker">YOUR NEXT MOVE</div>
+      <h2>Let’s Make Gaming History Together!</h2>
+      <p>Are you a creator or potential partner? Come make history with me.</p>
+    </div>
+    <a class="btn primary history-button" href="#contact">Connect to JBE ↗</a>
+  </div>
+</div>
+</section>
+<section id="contact" class="contact-section">
+<div class="wrap">
+<div class="contact-heading">
+<div><div class="contact-kicker">LET’S TALK</div><h2>Make the connection.</h2></div>
+<p>For content creator inquiries, partnerships, media, or general questions, send a message.</p>
+</div>
+<div class="contact-layout">
+<div class="contact-intro">
+<h3>Start a conversation</h3>
+<div class="contact-topic"><strong>Content creators</strong><span>Creator applications and collaborations</span></div>
+<div class="contact-topic"><strong>Partnerships</strong><span>Sponsorships and business inquiries</span></div>
+<div class="contact-topic"><strong>Media</strong><span>Press, interviews, and media requests</span></div>
+<div class="contact-footnote">Choose the reason for your message and include any relevant links or social handles.</div>
+</div>
+<div class="contact-form-column">
+<form class="contact-form contact-form-modern" id="contact-form">
+<div class="contact-fields">
+<div><label class="sr-only" for="sender-name">Your name</label><input class="field" id="sender-name" name="name" autocomplete="name" required placeholder="Your name"></div>
+<div><label class="sr-only" for="sender-email">Email address</label><input class="field" id="sender-email" name="email" type="email" autocomplete="email" required placeholder="Email address"></div>
+<div><label class="sr-only" for="contact-reason">What are you contacting me for?</label>
+<select class="field contact-select" id="contact-reason" name="reason" required>
+<option value="Content Creator" selected>Content Creator</option>
+<option value="Partnership/Sponsorship">Partnership/Sponsorship</option>
+<option value="Media">Media</option>
+<option value="General Questions">General Questions</option>
+</select></div>
+<div><label class="sr-only" for="sender-handle">Social handle (optional)</label><input class="field" id="sender-handle" name="handle" placeholder="Social handle (optional)"></div>
+</div>
+<div><label class="sr-only" for="sender-message">Tell us a little about yourself</label><textarea class="field" id="sender-message" name="message" required placeholder="Tell us a little about yourself..."></textarea></div>
+<button class="btn contact-send" type="submit">SEND MESSAGE ↗</button>
+</form>
+<p class="contact-note">Your email app will open with a message addressed to jukeboxego@gmail.com. Review it and press Send.</p>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <a class="footer-brand" href="#top" aria-label="Juke Box Ego home">
+      <img src="assets/juke-box-ego-logo.png" alt="Juke Box Ego logo">
+      <span class="footer-brand-copy"><strong>JUKE BOX EGO</strong><small>CONNECT · CREATE · COMMUNITY</small></span>
+    </a>
+    <p class="footer-copyright">© 2026 Juke Box Ego. All rights reserved.</p>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="#content">Explore content</a>
+      <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">Back to top ↑</a>
+    </nav>
+  </div>
+</footer>
+<script>
+const yearElement=document.getElementById('year');
+if(yearElement) yearElement.textContent=new Date().getFullYear();
+const toggle=document.querySelector('.menu'),nav=document.getElementById('navlinks');
+toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Close ✕':'Menu ☰';});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&nav.classList.contains('open')){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='Menu ☰';toggle.focus();}});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='Menu ☰';}));
+document.getElementById('contact-form').addEventListener('submit',event=>{event.preventDefault();const f=new FormData(event.currentTarget);const reason=f.get('reason');const subject=encodeURIComponent(reason+' inquiry from '+f.get('name'));const body=encodeURIComponent('Contact reason: '+reason+'\nName: '+f.get('name')+'\nReply email: '+f.get('email')+'\nSocial handle: '+(f.get('handle')||'Not provided')+'\n\nMessage:\n'+f.get('message'));window.location.href='mailto:jukeboxego@gmail.com?subject='+subject+'&body='+body;});
+// Local highlight clips play on hover/focus and pause when the pointer/focus leaves.
+document.querySelectorAll('.local-hover-video').forEach(wrap=>{
+  const video=wrap.querySelector('video');
+  const play=()=>{if(!video)return;wrap.classList.add('is-playing');const result=video.play();if(result&&typeof result.catch==='function')result.catch(()=>{});};
+  const pause=()=>{if(!video)return;video.pause();try{video.currentTime=0;}catch(e){}wrap.classList.remove('is-playing');};
+  // Pointer events cover mouse hover while keeping the behavior reliable across browsers.
+  wrap.addEventListener('pointerenter',play);
+  wrap.addEventListener('pointerleave',pause);
+  // Keep mouse fallbacks for older browsers.
+  wrap.addEventListener('mouseenter',play);
+  wrap.addEventListener('mouseleave',pause);
+  wrap.addEventListener('focusin',play);
+  wrap.addEventListener('focusout',pause);
+  // Touch devices have no hover: tap once to preview, tap again to pause.
+  wrap.addEventListener('click',()=>{if(video.paused)play();else pause();});
+});
+</script>
+
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute"><defs><clipPath id="dockSquircle" clipPathUnits="objectBoundingBox"><path d="M .5 0 C .88 0 1 .12 1 .5 S .88 1 .5 1 0 .88 0 .5 .12 0 .5 0Z"/></clipPath></defs></svg>
+<nav class="social-dock" aria-label="Social media shortcuts">
+  <a class="yt" href="https://www.youtube.com/@Juke_Box_Ego" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12s0-3.9-.5-5.8ZM9.6 15.6V8.4L15.8 12l-6.2 3.6Z"/></svg></a>
+  <a class="tt" href="https://www.tiktok.com/@juke.box.ego" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 6.2a5.8 5.8 0 0 1-3.5-1.2V15a6.6 6.6 0 1 1-5.7-6.5v3.6a3.1 3.1 0 1 0 2.2 3V0h3.5a5.8 5.8 0 0 0 3.5 5.3v.9Z"/></svg></a>
+  <a class="discord" href="https://discord.gg/K86YrTEtzB" target="_blank" rel="noopener noreferrer" aria-label="Discord" title="Discord"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.7 5.1A19 19 0 0 0 15 3.6l-.6 1.2a17.5 17.5 0 0 0-4.8 0L9 3.6a19 19 0 0 0-4.7 1.5C1.3 9.5.5 13.8.9 18a19 19 0 0 0 5.8 3l1.2-2a12 12 0 0 1-1.9-.9l.5-.4a13.6 13.6 0 0 0 11 0l.5.4a12 12 0 0 1-1.9.9l1.2 2a19 19 0 0 0 5.8-3c.5-4.9-.8-9.2-3.4-12.9ZM8.8 15.3c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Zm6.4 0c-1.1 0-2-1-2-2.2s.9-2.2 2-2.2 2 1 2 2.2-.9 2.2-2 2.2Z"/></svg></a>
+  <a class="steam" href="https://jukeboxego.github.io/Bob-site/index.html#about" target="_blank" rel="noopener noreferrer" aria-label="Explore BOB" title="Explore Bob"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0a12 12 0 0 0-11.8 9.9l6.5 2.7a3.4 3.4 0 0 1 2-.7l2.9-4.2v-.1a4.5 4.5 0 1 1 4.5 4.5h-.1l-4.2 3a3.4 3.4 0 0 1-6.7.9L.5 14.1A12 12 0 1 0 12 0Zm4.1 10.5a2.6 2.6 0 1 0 0-5.2 2.6 2.6 0 0 0 0 5.2ZM8.7 17.8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg></a>
+  <a class="linktree" href="https://linktr.ee/jukeboxego" target="_blank" rel="noopener noreferrer" aria-label="Linktree, all links" title="All links on Linktree"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0 8.5 5.8h2.1L6.4 11h4.2v4.1h2.8V11h4.2l-4.2-5.2h2.1L12 0Zm-8.4 9.4L0 14.9h8.1v-2.7H4.4l2.2-2.8H3.6Zm16.8 0h-3l2.2 2.8h-3.7v2.7H24l-3.6-5.5ZM10.6 17h2.8v7h-2.8v-7Z"/></svg></a>
+</nav>
+
+</body></html>
